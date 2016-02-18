@@ -50,7 +50,7 @@ define(
       });
 
       this.setAlertMessage = function (ev, data) {
-        $(this.attr.alertSelector).html(hogans.compile(tpl_alert_src).render({
+        $( "#alert-message").html(hogans.compile(tpl_alert_src).render({
           category: data.category,
           message: data.message
         }));
